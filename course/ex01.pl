@@ -16,9 +16,9 @@ distance((X1, Y1), (X2, Y2), D) :-
 gcd(A, A, A) :- !.
 
 gcd(A, B, G) :-
-    A > B,
+    A > B, !,
     A1 is A-B,
-    gcd(A1, B, G), !.
+    gcd(A1, B, G).
 
 gcd(A, B, G) :-
     A < B,
