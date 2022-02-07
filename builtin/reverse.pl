@@ -10,3 +10,13 @@ reverse([], []).
 reverse([Head | Tail], List) :-
     reverse(Tail, X),
     append(X, [Head], List).
+
+% accumulator version
+
+% reverse(List, RevList) :-
+%     reverse(List, [], RevList).
+
+% reverse([], Acc, Acc) :- !.
+
+% reverse([H | T], Acc, RevList) :-
+%     reverse(T, [H | Acc], RevList).
