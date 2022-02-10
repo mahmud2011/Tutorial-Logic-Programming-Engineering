@@ -16,7 +16,7 @@ reverse([Head | Tail], List) :-
 % reverse(List, RevList) :-
 %     reverse(List, [], RevList).
 
-% reverse([], Acc, Acc) :- !.
+% reverse([], Acc, Acc).
 
 % reverse([H | T], Acc, RevList) :-
 %     reverse(T, [H | Acc], RevList).
